@@ -1,3 +1,14 @@
-.dashboardItem { 
-    font: 16px;
+.dashboard-item {
+  background-color: #222;
+  border-radius: 30px;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  > .name {
+    font-size: 18px;
+    font-weight: 700;
+  }
 }

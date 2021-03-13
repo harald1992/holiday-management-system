@@ -1,9 +1,11 @@
 <h1>Vakantiedagen</h1>
 <p>Overzicht</p>
 
-<hr />
+<br />
 
-<app-dashboard-item
-  *ngFor="let item of dashboardItems"
-  [name]="item.name"
-></app-dashboard-item>
+<div *ngFor="let item of dashboardItems" class="dashboard-list-item">
+  <app-dashboard-item
+    [name]="item.name"
+    [holidayDaysRemaining]="item.holidayDaysRemaining"
+  ></app-dashboard-item>
+</div>
